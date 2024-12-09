@@ -25,11 +25,11 @@ Users should be able to:
 
 ### Screenshot
 
-![Recipe Main Page]()
+![Recipe Main Page](./assets/images/Screenshot.png)
 
 ### Links
 
-- Solution URL: [https://github.com/k-hroma/Social-Link-Profile.git]
+- Solution URL: [https://k-hroma.github.io/Recipe-main-page/]
 - Live Site URL: [https://github.com/k-hroma/Recipe-main-page.git]
 
 ## My process
