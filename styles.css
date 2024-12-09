@@ -1,0 +1,238 @@
+/*
+font-family: "Young Serif", serif;
+font-weight: 400,
+font-family: "Outfit", sans-serif;
+font-weight: 400, 600, 700;
+*/
+:root {
+
+  --white: hsl(0, 0%, 100%);
+
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+
+  --brown-800: hsl(14, 45%, 36%);
+
+  --rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+body {
+  width: 90rem;
+  /* 1440px en rem */
+  height: 122.1875rem;
+  /* 1955px en rem */
+  padding: 7.5rem 21.875rem;
+  /* 120px arriba/abajo, 350px laterales */
+  margin: 0 auto;
+  background-color: var(--stone-100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  /* Incluye padding en el cálculo del tamaño total */
+}
+
+main {
+  display: flex;
+  /* Habilitamos flexbox */
+  flex-direction: column;
+  /* Alineación vertical de los elementos hijos */
+  align-items: center;
+  /* Centra los hijos horizontalmente */
+  width: 46rem;
+  /* 740px en rem */
+  height: 106.75rem;
+  /* 1715px en rem */
+  background: var(--white);
+  border-radius: 20px;
+  padding: 2.5rem;
+  /* Espaciado interno */
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.container-title {
+  width: 41rem;
+  box-sizing: border-box;
+}
+
+.container-title h1 {
+  font-family: "Young Serif", serif;
+  font-size: 2.5rem;
+  text-align: left;
+  color: var(--stone-900);
+  margin-top: 1.65rem;
+  margin-bottom: 1.25rem;
+}
+
+.container-title p {
+  text-align: left;
+  color: var(--stone-600);
+  margin-bottom: 2.0625rem;
+}
+
+.container-time ul {
+  background-color: var(--Rose-50);
+  border-radius: 10px;
+  width: 41.1875rem;
+  height: 11.25rem;
+  padding: 1.875rem;
+  box-sizing: border-box;
+  list-style-position: inside;
+}
+
+.container-time ul li::marker {
+  color: var(--rose-800);
+}
+
+.container-time h3 {
+  color: var(--rose-800);
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-top: -0.6rem;
+  margin-bottom: 1rem;
+}
+
+.container-time li {
+  color: var(--stone-600);
+  margin-left: 0.6rem;
+}
+
+
+.container-time ul li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.container-time .first-word {
+  color: var(--stone-600);
+  font-weight: 600;
+  margin-left: 0.4375rem;
+}
+
+.container-ingredients {
+  margin-top: 1.875rem;
+  margin-bottom: 1.875rem;
+}
+
+.container-ingredients h2 {
+  font-size: 1.75rem;
+  font-family: "Young Serif", serif;
+  color: var(--brown-800);
+  margin-bottom: 1rem;
+}
+
+.container-ingredients ul {
+  list-style-position: outside;
+  text-indent: 1.1rem;
+}
+
+.container-ingredients ul li::marker {
+  color: var(--brown-800);
+}
+
+.container-ingredients li {
+  color: var(--stone-600);
+  margin-left: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.container-ingredients hr {
+  background-color: var(--stone-150);
+}
+
+.container-instructions h2 {
+  font-size: 1.75rem;
+  font-family: "Young Serif", serif;
+  color: var(--brown-800);
+  margin-bottom: 1rem;
+}
+
+.container-instructions ol {
+  list-style-position: outside;
+  text-indent: 1.1rem;
+  margin-bottom: 1.875rem;
+
+}
+
+.container-instructions ol li::marker {
+  color: var(--brown-800);
+  font-weight: 600;
+}
+
+.container-instructions li {
+  color: var(--stone-600);
+  text-indent: -0.01rem;
+  margin-left: 1.6rem;
+  padding-left: 0.9rem
+}
+
+.container-instructions ol li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.container-instructions hr {
+  background-color: var(--stone-150);
+  margin-bottom: 1.875rem;
+}
+
+.container-instructions .first-word {
+  color: var(--stone-600);
+  font-weight: 600;
+}
+
+.container-nutrition h2 {
+  font-size: 1.75rem;
+  font-family: "Young Serif", serif;
+  color: var(--brown-800);
+  margin-bottom: 0.6rem;
+}
+
+.container-nutrition p {
+  color: var(--stone-600);
+
+  margin-bottom: 1rem;
+  padding-top: 0.6rem;
+}
+
+
+.container-table {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+
+}
+
+.container-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2.5rem;
+}
+
+.container-row>p:first-of-type {
+  margin-left: 1rem;
+  color: var(--stone-600);
+}
+
+.container-nutrition hr {
+  background-color: var(--stone-150);
+}
+
+.container-row .values {
+  font-weight: 700;
+  color: var(--brown-800);
+}
